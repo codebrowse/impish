@@ -2,7 +2,20 @@
 
 A friendly helper library for the `imp` module.
 
+![](imp.jpg)
+
+[Source](http://49.50.242.36/images/zoom/1971-1980/1973_7_83.jpg)
+
+
+## Introduction
+
+Impish implements helper methods which wrap `imp` module functionality to provide a friendlier programming interface with nicer exception handling.  
+
+It is an MIT-licensed [codebrow.se](http://codebrow.se) package written by [Michael Van Veen](http://github.com/mvanveen).
+
 ----
+
+###Definitons
 
 **imp** *|imp|*  
 noun  
@@ -12,7 +25,7 @@ a mischievous child: *a cheeky young imp.*
 verb [ with obj. ]  
 repair a damaged feather in (the wing or tail   of a trained hawk) by attaching part of a new feather.
 
------
+----
 
 **impish** *|ˈimpiSH|*   
 adjective  
@@ -26,17 +39,15 @@ DERIVATIVES
 
 ----
 
-## Introduction
-
-This is a small helper library
-
 ## Examples
 
-**Finding a module's absolute file path**
+**1. Finding a module's absolute file path**
 
     >>> import impish
     >>> impish.find('os')
     /path/to/os.py
+
+**`find` also accepts modules as a parameter directly**
 
     >>> impish.find(os)
     /path/to/os
@@ -61,4 +72,3 @@ This is a small helper library
 	
 	>>> impish.find_file(os)
 	<file object>
-
