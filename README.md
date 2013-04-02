@@ -72,3 +72,6 @@ DERIVATIVES
 	
 	>>> impish.find_file(os)
 	<file object>
+
+
+  ![](cb_qr.png)
