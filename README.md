@@ -11,7 +11,7 @@ A friendly helper library for the `imp` module.
 
 Impish implements helper methods which wrap `imp` module functionality to provide a friendlier programming interface with nicer exception handling.  
 
-It is an MIT-licensed [codebrow.se](http://codebrow.se) package written by [Michael Van Veen](http://github.com/mvanveen).
+It is an MIT-licensed.
 
 ----
 
@@ -73,5 +73,8 @@ DERIVATIVES
 	>>> impish.find_file(os)
 	<file object>
 
+----
 
-  ![](cb_qr.png)
+![](cb_qr.png)
+  
+Impish is a **[codebrow.se](http://codebrow.se)** package written by [Michael Van Veen](http://github.com/mvanveen).
