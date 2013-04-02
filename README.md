@@ -36,7 +36,7 @@ This is a small helper library
 
     >>> import impish
     >>> impish.find('os')
-  /path/to/os.py
+    /path/to/os.py
 
     >>> impish.find(os)
     /path/to/os
