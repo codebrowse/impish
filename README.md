@@ -9,9 +9,11 @@ A friendly helper library for the `imp` module.
 
 ## Introduction
 
-Impish implements helper methods which wrap `imp` module functionality to provide a friendlier programming interface with nicer exception handling.  
+Impish implements helper methods which wrap `imp` module 
+functionality to provide a friendlier programming interface with 
+nicer exception handling.  
 
-It is an MIT-licensed.
+It is MIT-licensed.
 
 ----
 
@@ -23,7 +25,7 @@ a mischievous child: *a cheeky young imp.*
 • a small, mischievous devil or sprite.  
 
 verb [ with obj. ]  
-repair a damaged feather in (the wing or tail   of a trained hawk) by attaching part of a new feather.
+repair a damaged feather in (the wing or tail of a trained hawk) by attaching part of a new feather.
 
 ----
 
