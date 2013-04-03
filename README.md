@@ -46,12 +46,12 @@ DERIVATIVES
 **1. Finding a module's absolute file path**
 
     >>> import impish
-    >>> impish.find('os')
+    >>> impish.find('os').filename
     /path/to/os.py
 
 **`find` also accepts modules as a parameter directly**
 
-    >>> impish.find(os)
+    >>> impish.find(os).filename
     /path/to/os
     
 **TODO**: determine if I can get shared code object (e.g. `.so` file)
