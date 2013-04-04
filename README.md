@@ -49,7 +49,7 @@ DERIVATIVES
     >>> impish.find('os').filename
     /path/to/os.py
 
-**`find` also accepts modules as a parameter directly**
+**2. `find` also accepts modules as a parameter directly**
 
     >>> impish.find(os).filename
     /path/to/os
@@ -59,7 +59,7 @@ DERIVATIVES
     >>> impish.find(__import__)
     TypeError: `__import__` is built-in.
 
-**Checking for a built-in**
+**3. Checking for a built-in**
 
 	>>> impish.isbuiltin('__import__')
 	True

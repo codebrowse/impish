@@ -10,11 +10,14 @@ Suffix = namedtuple('Suffix', 'suffix mode type')
 Import = namedtuple('Import', 'file filename description')
 
 
-def isbuiltin():
-  pass
+def isbuiltin(module):
+  result = find(module)
+  if result.description.type == imp.C_BUILTIN:
+    return True
+  return False
+
 
 def find(module):
-  if isinstance(module, basestring):
-    metadata = list(imp.find_module(module))
-    metadata[2] = Suffix(*metadata[2])
-    return Import(*metadata)
+  metadata = list(imp.find_module(module))
+  metadata[2] = Suffix(*metadata[2])
+  return Import(*metadata)

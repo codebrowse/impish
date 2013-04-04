@@ -27,3 +27,11 @@ class ImpishTest(unittest.TestCase):
 
   def test_description_type(self):
     assert self._os.description.type == 1
+
+
+class ImpushBuiltinTest(unittest.TestCase):
+  def test_builtin_true(self):
+    assert impish.isbuiltin('sys') == True
+
+  def test_builtin_true(self):
+    assert impish.isbuiltin('os') == False
