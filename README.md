@@ -53,11 +53,14 @@ DERIVATIVES
 
     >>> impish.find(os).filename
     /path/to/os
-    
-**TODO**: determine if I can get shared code object (e.g. `.so` file)
-    
-    >>> impish.find(__import__)
-    TypeError: `__import__` is built-in.
+
+**Finding a module's file object**
+
+	>>> impish.find('os').file
+	<file object>
+	
+	>>> impish.find(os).file
+	<file object>
 
 **3. Checking for a built-in**
 
@@ -67,13 +70,13 @@ DERIVATIVES
 	>>> impish.isbuiltin('os')
 	False
 
-**Finding a module's file object**
+**4. Checking for source**
 
-	>>> impish.find_file('os')
-	<file object>
+	>>> impish.issource('sys')
+	False
 	
-	>>> impish.find_file(os)
-	<file object>
+	>>> impish.isbuiltin('os')
+	True
 
 ----
 

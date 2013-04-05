@@ -29,9 +29,20 @@ class ImpishTest(unittest.TestCase):
     assert self._os.description.type == 1
 
 
-class ImpushBuiltinTest(unittest.TestCase):
+class TestIsBuiltin(unittest.TestCase):
   def test_builtin_true(self):
     assert impish.isbuiltin('sys') == True
 
-  def test_builtin_true(self):
+  def test_builtin_false(self):
     assert impish.isbuiltin('os') == False
+
+
+class TestIsSource(unittest.TestCase):
+  def test_source_true(self):
+    assert impish.issource('sys') == False
+
+  def test_source_false(self):
+    assert impish.issource('os') == True
+
+
+
