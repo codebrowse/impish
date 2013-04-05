@@ -49,11 +49,6 @@ DERIVATIVES
     >>> impish.find('os').filename
     /path/to/os.py
 
-**2. `find` also accepts modules as a parameter directly**
-
-    >>> impish.find(os).filename
-    /path/to/os
-
 **Finding a module's file object**
 
 	>>> impish.find('os').file
@@ -62,7 +57,7 @@ DERIVATIVES
 	>>> impish.find(os).file
 	<file object>
 
-**3. Checking for a built-in**
+**2. Checking for a built-in**
 
 	>>> impish.isbuiltin('sys')
 	True
@@ -70,7 +65,7 @@ DERIVATIVES
 	>>> impish.isbuiltin('os')
 	False
 
-**4. Checking for source**
+**3. Checking for source**
 
 	>>> impish.issource('sys')
 	False
@@ -79,6 +74,13 @@ DERIVATIVES
 	True
 
 ----
+
+# TODOS
+
+- Add tests for other type checking functions
+- Docstrings
+- Make find work with already imported modules
+
 
 ![](cb_qr.png)
   
