@@ -80,6 +80,7 @@ DERIVATIVES
 - Add tests for other type checking functions
 - Docstrings
 - Make find work with already imported modules
+- add `setup.py` file
 
 ----
 
