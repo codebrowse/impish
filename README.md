@@ -81,6 +81,7 @@ DERIVATIVES
 - Docstrings
 - Make find work with already imported modules
 
+----
 
 ![](cb_qr.png)
   
