@@ -61,7 +61,7 @@ DERIVATIVES
 
 **3. Checking for a built-in**
 
-	>>> impish.isbuiltin('__import__')
+	>>> impish.isbuiltin('sys')
 	True
 	
 	>>> impish.isbuiltin('os')
